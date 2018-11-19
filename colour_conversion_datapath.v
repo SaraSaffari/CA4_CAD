@@ -71,6 +71,12 @@ module colour_conversion_datapath(clk, rst, R_data, Yen_odd, Uen_odd, Ven_odd, Y
 		.sel(Smux1),
 		.out(outMux1));
 
+	// matrix
+	// 76284 0 104595
+	// 76284 −25624 −53281
+	// 76284 132251 0
+
+	// these numbers should be mux's input but how do we seprate them?
 	mux_4_input #(.WORD_LENGTH (24)) mux2(
 		.in1(), // what goes here ??
 		.in2(), 
@@ -80,6 +86,8 @@ module colour_conversion_datapath(clk, rst, R_data, Yen_odd, Uen_odd, Ven_odd, Y
 		.out(outMux2));
 
 	// what about combinational unit ??
+	// is out_combinational a wire ??
+	// assign out_combinational = [23:16] outMux1 * [] outMux1;
 
 	register #(.size(16)) Temp( //is the size ok??
 		.clock(clk),
@@ -89,3 +97,18 @@ module colour_conversion_datapath(clk, rst, R_data, Yen_odd, Uen_odd, Ven_odd, Y
 		.regOut(out_Temp));
 
 	assign W_data = {out_Temp, out_combinational}; //is the order ok??
+endmodule
+
+	// #(
+	// 	parameter x1y1 = 18'b 010010100111111100	,
+	// 	parameter x2y1 = 18'b 0 ,
+	// 	parameter x3y1 = 18'b 011001100010010011,
+
+	// 	parameter x1y2 = 18'b 010010100111111100,
+	// 	parameter x2y2 = 18'b ,
+	// 	parameter x3y2 = 18'b ,
+
+	// 	parameter x1y3 = 18'b 010010100111111100,
+	// 	parameter x2y3 = 18'b 100000010010011011,
+	// 	parameter x3y3 = 18'b 0,
+	// )
