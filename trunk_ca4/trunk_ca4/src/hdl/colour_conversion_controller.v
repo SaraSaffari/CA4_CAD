@@ -6,7 +6,7 @@ module colour_conversion_controller(clk, rst, clear, start, Smux1, Smux2, Wrenb,
 					READ3 = 3'd5, READ4 = 3'd6, READ5 = 3'd7;
 
 	output reg clear, Smux1, Wrenb, Yen_odd, Uen_odd, Ven_odd,
-		Temp_en,Yen_even, Uen_even, Ven_even, Cen, end_of_pixel;
+		Temp_en,Yen_even, Uen_even, Ven_even, Cen;
 	output reg [1:0]  Smux2;
 	output done;
 
