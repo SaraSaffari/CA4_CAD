@@ -22,8 +22,11 @@ module yuv_to_rgb_conversion#(
 );
 
 
-
-wire Smux1, Smux2, Yen_odd, Uen_odd, Ven_odd, Yen_even, Uen_even, Ven_even, clear;
+wire [AW-1:0] Roffset, Woffset, R_addr;
+assign raddr = R_addr + Roffset;
+assign waddr = (R_addr) * 3 - Woffset + ADDR_ORDER_PIXEL;
+wire Yen_odd, Uen_odd, Ven_odd, Yen_even, Uen_even, Ven_even, clear, Smux1;
+wire [1:0] Smux2;
 wire Cen, end_of_pixel, Temp_en;
 	
 	colour_conversion_controller c(
@@ -43,7 +46,9 @@ wire Cen, end_of_pixel, Temp_en;
 	.Ven_even(Ven_even), 
 	.Cen(Cen), 
 	.done(done), 
-	.end_of_pixel(end_of_pixel)
+	.end_of_pixel(end_of_pixel),
+	.Roffset(Roffset), 
+	.Woffset(Woffset)
 	);
 
 colour_conversion_datapath	D(
@@ -61,7 +66,8 @@ colour_conversion_datapath	D(
 	.Cen(Cen), 
 	.Temp_en(Temp_en), 
 	.end_of_pixel(end_of_pixel), 
-	.W_data(wdata)
+	.W_data(wdata),
+	.R_addr(R_addr)
 	);
 
 

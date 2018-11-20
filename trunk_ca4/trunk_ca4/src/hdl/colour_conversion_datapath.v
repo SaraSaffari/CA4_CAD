@@ -12,7 +12,7 @@ module colour_conversion_datapath#(
 	parameter [19:0] x3y3 = 20'd 0
 	)
 	(clk, rst, R_data, Yen_odd, Uen_odd, Ven_odd, Yen_even, Uen_even, Ven_even,
-		Smux1, Smux2, Cen, Temp_en, end_of_pixel, W_data);
+		Smux1, Smux2, Cen, Temp_en, end_of_pixel, W_data, R_addr);
 
 	input clk, rst, Cen, Temp_en, Yen_odd, Uen_odd, Ven_odd, Yen_even, Uen_even, Ven_even, Smux1;
 	input[1:0] Smux2;
@@ -21,13 +21,13 @@ module colour_conversion_datapath#(
 	output end_of_pixel;
 	output[15:0] W_data;
   
-  	wire [17:0] R_addr;
-	wire Y_even_out, U_even_out, V_even_out;
-	wire Y_odd_out, U_odd_out, V_odd_out;
-	wire [59:0]outMux1, outMux2;
-	wire [15:0] out_combinational;
-	wire out_Temp;
-	wire result_0, result_1, result_2;
+  	output wire [17:0] R_addr;
+	wire [7:0] Y_even_out, U_even_out, V_even_out;
+	wire [7:0] Y_odd_out, U_odd_out, V_odd_out;
+	wire [59:0] outMux2;
+	wire [23:0] outMux1;
+	wire [15:0] out_combinational, out_Temp;
+	wire [40:0] result_0, result_1, result_2;
 
 	parameter[19:0] a_third_of_all_pixels = 20'd 38400;    
 	assign end_of_pixel = a_third_of_all_pixels - R_addr ? 0 : 1;
@@ -36,42 +36,42 @@ module colour_conversion_datapath#(
 		.clock(clk),
 		.rst(rst),
 		.enable(Yen_even),
-		.regIn(R_data[7:0]),
+		.regIn(R_data[15:8]),
 		.regOut(Y_even_out));
 	
 	register #(.size(8)) U_even(
 		.clock(clk),
 		.rst(rst),
 		.enable(Uen_even),
-		.regIn(R_data[7:0]),
+		.regIn(R_data[15:8]),
 		.regOut(U_even_out));
 	
 	register #(.size(8)) V_even(
 		.clock(clk),
 		.rst(rst),
 		.enable(Ven_even),
-		.regIn(R_data[7:0]),
+		.regIn(R_data[15:8]),
 		.regOut(V_even_out));
 
 	register #(.size(8)) Y_odd(
 		.clock(clk),
 		.rst(rst),
 		.enable(Yen_odd),
-		.regIn(R_data[15:8]),
+		.regIn(R_data[7:0]),
 		.regOut(Y_odd_out));
 
 	register #(.size(8)) U_odd(
 		.clock(clk),
 		.rst(rst),
 		.enable(Uen_odd),
-		.regIn(R_data[15:8]),
+		.regIn(R_data[7:0]),
 		.regOut(U_odd_out));
 
 	register #(.size(8)) V_odd(
 		.clock(clk),
 		.rst(rst),
 		.enable(Ven_odd),
-		.regIn(R_data[15:8]),
+		.regIn(R_data[7:0]),
 		.regOut(V_odd_out));
 
 	counterr cnt (
@@ -80,7 +80,7 @@ module colour_conversion_datapath#(
 		.en(Cen),
 		.counter(R_addr));
 
-	mux_2_input #(.WORD_LENGTH (8)) mux1(
+	mux_2_input #(.WORD_LENGTH (24)) mux1(
 		.in1({Y_odd_out, U_odd_out, V_odd_out}),   
 		.in2({Y_even_out, U_even_out, V_even_out}),
 		.sel(Smux1),

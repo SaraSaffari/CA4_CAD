@@ -1,4 +1,4 @@
-module mux_4_input #(parameter integer WORD_LENGTH = 24) (in1, in2, in3, sel, out);
+module mux_3_input #(parameter integer WORD_LENGTH = 24) (in1, in2, in3, sel, out);
 	input wire [1:0]sel;
 	input wire[WORD_LENGTH-1:0] in1, in2, in3;
 	output reg [WORD_LENGTH-1:0] out;
