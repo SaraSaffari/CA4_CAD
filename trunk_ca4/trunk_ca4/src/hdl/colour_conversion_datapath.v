@@ -21,7 +21,7 @@ module colour_conversion_datapath#(
 	output end_of_pixel;
 	output[15:0] W_data;
   
-  wire [17:0] R_addr;
+  	wire [17:0] R_addr;
 	wire Y_even_out, U_even_out, V_even_out;
 	wire Y_odd_out, U_odd_out, V_odd_out;
 	wire [59:0]outMux1, outMux2;
@@ -103,9 +103,13 @@ module colour_conversion_datapath#(
 	assign result_1 = ($signed(outMux2[39:20]) * ({12'b 0 ,outMux1[15: 7]} - 20'd 128) ) / 20'd 65536;
 	assign result_0 = ($signed(outMux2[19: 0]) * ({12'b 0 ,outMux1[7 : 0]} - 20'd 128) ) / 20'd 65536;
 
-	if ($signed(result_2) + $signed(result_1) + $signed(result_0) > 8'd255) assign out_combinational =  8'd255;
-	if ($signed(result_2) + $signed(result_1) + $signed(result_0) < 8'd0) assign out_combinational =  8'd0;
-	else assign out_combinational = { $signed(result_2) + $signed(result_1) + $signed(result_0)};
+	assign out_combinational = $signed(result_2) + $signed(result_1) + $signed(result_0) > 8'd255 ? 8'd255 : 
+	$signed(result_2) + $signed(result_1) + $signed(result_0) < 8'd000 ? 8'd000 : 
+	$signed(result_2) + $signed(result_1) + $signed(result_0);
+
+	// if ($signed(result_2) + $signed(result_1) + $signed(result_0) > 8'd255) assign out_combinational =  8'd255;
+	// if ($signed(result_2) + $signed(result_1) + $signed(result_0) < 8'd0) assign out_combinational =  8'd0;
+	// else assign out_combinational = { $signed(result_2) + $signed(result_1) + $signed(result_0)};
 
 	register #(.size(16)) Temp( //is the size ok??
 		.clock(clk),

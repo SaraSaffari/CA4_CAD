@@ -4,23 +4,23 @@ K3
 cModel Technology
 Z0 dD:\CA_CA\CAD\CA4_CAD\trunk_ca4\trunk_ca4\sim
 vcolour_conversion
-Z1 !s10a 1542704656
-Z2 I^U`TPYe:4nFi4E2nhBBNi1
-Z3 VfdW@4R`=?@9D69z9J0`5@3
-Z4 dD:\CA_CA\CAD\CA4_CAD\trunk_ca4\trunk_ca4\sim
-Z5 w1542704656
-Z6 8../src/hdl/colour_conversion.v
-Z7 F../src/hdl/colour_conversion.v
+Z1 I6WKXZJFWN:Qa]DNWbJOlj3
+Z2 VG`0;1FTNVJN5N@iRmD[YK2
+Z3 dD:\CA_CA\CAD\CA4_CAD\trunk_ca4\trunk_ca4\sim
+Z4 w1542724212
+Z5 8../src/hdl/colour_conversion.v
+Z6 F../src/hdl/colour_conversion.v
 L0 1
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 o+acc -source -O0
-Z10 !s100 cLEb:?KFa>4HU0Q2deTBM0
-Z11 !s108 1542704658.293000
-Z12 !s107 ../src/hdl/yuv_to_rgb_conversion.v|../src/hdl/sram_vga_controller.v|../src/hdl/register.v|../src/hdl/mux4input.v|../src/hdl/mux2input.v|../src/hdl/decompressor_top.v|../src/hdl/counter.v|../src/hdl/colour_conversion_datapath.v.bak|../src/hdl/colour_conversion_datapath.v|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion.v.bak|../src/hdl/colour_conversion.v|
-Z13 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|../src/hdl/colour_conversion.v|../src/hdl/colour_conversion.v.bak|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion_datapath.v|../src/hdl/colour_conversion_datapath.v.bak|../src/hdl/counter.v|../src/hdl/decompressor_top.v|../src/hdl/mux2input.v|../src/hdl/mux4input.v|../src/hdl/register.v|../src/hdl/sram_vga_controller.v|../src/hdl/yuv_to_rgb_conversion.v|
-Z14 !s92 +acc -source +define+SIM -O0
+Z8 !s108 1542724231.293000
+Z9 !s107 ../src/hdl/yuv_to_rgb_conversion.v|../src/hdl/sram_vga_controller.v|../src/hdl/register.v|../src/hdl/mux4input.v|../src/hdl/mux3input.v|../src/hdl/mux2input.v|../src/hdl/decompressor_top.v|../src/hdl/counter.v|../src/hdl/colour_conversion_datapath.v|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion.v|
+Z10 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|../src/hdl/colour_conversion.v|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion_datapath.v|../src/hdl/counter.v|../src/hdl/decompressor_top.v|../src/hdl/mux2input.v|../src/hdl/mux3input.v|../src/hdl/mux4input.v|../src/hdl/register.v|../src/hdl/sram_vga_controller.v|../src/hdl/yuv_to_rgb_conversion.v|
+Z11 o+acc -source -O0
+Z12 !s92 +acc -source +define+SIM -O0
+Z13 !s100 P?lAlNOk1d[n<65l?A3m50
+Z14 !s10a 1542724212
 !i10b 1
 !s85 0
 !s101 -O0
@@ -28,17 +28,17 @@ vcolour_conversion_controller
 Z15 !s10a 1542705051
 Z16 I`b;]QYn[8GRbcA>Hh0;ke3
 Z17 V1Ul3n6jUnC^LFNVTbMfI^2
-R4
+R3
 Z18 w1542705051
 Z19 8../src/hdl/colour_conversion_controller.v
 Z20 F../src/hdl/colour_conversion_controller.v
 L0 1
-R8
+R7
 r1
 31
 Z21 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|../src/hdl/colour_conversion.v|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion_datapath.v|../src/hdl/counter.v|../src/hdl/decompressor_top.v|../src/hdl/mux2input.v|../src/hdl/mux4input.v|../src/hdl/register.v|../src/hdl/sram_vga_controller.v|../src/hdl/yuv_to_rgb_conversion.v|
-R9
-R14
+R11
+R12
 Z22 !s100 mOomWCD59Ice`hn4H=L?33
 Z23 !s108 1542705058.728000
 Z24 !s107 ../src/hdl/yuv_to_rgb_conversion.v|../src/hdl/sram_vga_controller.v|../src/hdl/register.v|../src/hdl/mux4input.v|../src/hdl/mux2input.v|../src/hdl/decompressor_top.v|../src/hdl/counter.v|../src/hdl/colour_conversion_datapath.v|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion.v|
@@ -46,126 +46,127 @@ Z24 !s107 ../src/hdl/yuv_to_rgb_conversion.v|../src/hdl/sram_vga_controller.v|..
 !s85 0
 !s101 -O0
 vcolour_conversion_datapath
-Z25 I^9gO0VLMD?7`b^lgg:^G50
-Z26 V3_C749UOGXWEk9SNKSUfO3
-R4
-Z27 w1542706296
-Z28 8../src/hdl/colour_conversion_datapath.v
-Z29 F../src/hdl/colour_conversion_datapath.v
+Z25 !s10a 1542718326
+Z26 I;LH32Bb^?mHWi:SC[4PK31
+Z27 V3_C749UOGXWEk9SNKSUfO3
+R3
+Z28 w1542718326
+Z29 8../src/hdl/colour_conversion_datapath.v
+Z30 F../src/hdl/colour_conversion_datapath.v
 L0 1
-R8
+R7
 r1
 31
-R21
+Z31 !s108 1542718345.472000
 R9
-R14
-Z30 !s100 c9mU0<3hK2_53^czi:Ib<2
-Z31 !s108 1542706305.610000
-R24
+R10
+R11
+R12
+Z32 !s100 YgXzR92zCf05z<_fhTD9m3
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter
-Z32 IkafbAEUzLCYB?o7I?=Uk`3
-Z33 VNKdKiBgoRa@^O=IAz=9[N0
-R4
-Z34 w1542703135
-Z35 8EmulatorModule/VGA_Emulator.v
-Z36 FEmulatorModule/VGA_Emulator.v
-Z37 L0 188
-R8
+Z33 !s10a 1542703135
+Z34 IkafbAEUzLCYB?o7I?=Uk`3
+Z35 VNKdKiBgoRa@^O=IAz=9[N0
+R3
+Z36 w1542703135
+Z37 8EmulatorModule/VGA_Emulator.v
+Z38 FEmulatorModule/VGA_Emulator.v
+Z39 L0 188
+R7
 r1
 31
-Z38 !s108 1542706306.093000
-Z39 !s107 EmulatorModule/VGA_Emulator.v|
-Z40 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|EmulatorModule/VGA_Emulator.v|
-R9
-R14
+Z40 !s108 1542706306.093000
+Z41 !s107 EmulatorModule/VGA_Emulator.v|
+Z42 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|EmulatorModule/VGA_Emulator.v|
+R11
+R12
+Z43 !s100 3lR:e1ik:L^N9ZlNBH59L2
 !i10b 1
-Z41 !s100 3lR:e1ik:L^N9ZlNBH59L2
 !s85 0
 !s101 -O0
 vcounterr
-Z42 !s10a 1542703135
-Z43 IG2SPeF@]LA^e_NP3FHd]a1
-Z44 VjbBRRhF_M6[d0O>z;YBK<0
-R4
-R34
-Z45 8../src/hdl/counter.v
-Z46 F../src/hdl/counter.v
+R33
+Z44 IG2SPeF@]LA^e_NP3FHd]a1
+Z45 VjbBRRhF_M6[d0O>z;YBK<0
+R3
+R36
+Z46 8../src/hdl/counter.v
+Z47 F../src/hdl/counter.v
 L0 1
-R8
+R7
 r1
 31
-Z47 !s108 1542704725.645000
+Z48 !s108 1542704725.645000
 R24
 R21
-R9
-R14
-Z48 !s100 HnO5n15ag_40`]BWgoeW80
+R11
+R12
+Z49 !s100 HnO5n15ag_40`]BWgoeW80
 !i10b 1
 !s85 0
 !s101 -O0
 vdecompressor_top
-R42
-Z49 I5;LzgBA@0;1on?>EH7[HB1
-Z50 VDIMg@62@?JC^><8?dE2lb1
-R4
-R34
-Z51 8../src/hdl/decompressor_top.v
-Z52 F../src/hdl/decompressor_top.v
+R33
+Z50 I5;LzgBA@0;1on?>EH7[HB1
+Z51 VDIMg@62@?JC^><8?dE2lb1
+R3
+R36
+Z52 8../src/hdl/decompressor_top.v
+Z53 F../src/hdl/decompressor_top.v
 L0 2
-R8
+R7
 r1
 31
-R47
+R48
 R24
 R21
-R9
-R14
-Z53 !s100 5^9fThN_S1b9`TBL?YEUc3
+R11
+R12
+Z54 !s100 5^9fThN_S1b9`TBL?YEUc3
 !i10b 1
 !s85 0
 !s101 -O0
 vmux_2_input
-Z54 !s10a 1542704992
-Z55 I1P3WERbaea0nM6K_mRKVO3
-Z56 VLi_L^[cfW2:P0e2XkUfWP0
-R4
-Z57 w1542704992
-Z58 8../src/hdl/mux2input.v
-Z59 F../src/hdl/mux2input.v
+Z55 !s10a 1542704992
+Z56 I1P3WERbaea0nM6K_mRKVO3
+Z57 VLi_L^[cfW2:P0e2XkUfWP0
+R3
+Z58 w1542704992
+Z59 8../src/hdl/mux2input.v
+Z60 F../src/hdl/mux2input.v
 L0 1
-R8
+R7
 r1
 31
 R21
-R9
-R14
-Z60 !s100 5`kiE6X]:hZEO`YSBjll52
-Z61 !s108 1542704999.069000
+R11
+R12
+Z61 !s100 5`kiE6X]:hZEO`YSBjll52
+Z62 !s108 1542704999.069000
 R24
 !i10b 1
 !s85 0
 !s101 -O0
 vmux_4_input
-Z62 !s10a 1542704980
-Z63 IBD_BfKHo5JS?TmZdS0Gm@2
-Z64 VFS=V?GGn@7KFIIIzDbm8Q3
-R4
-Z65 w1542704980
-Z66 8../src/hdl/mux4input.v
-Z67 F../src/hdl/mux4input.v
+Z63 !s100 J>U:D9kB0YI2]YQ<5eOff1
+Z64 IBD_BfKHo5JS?TmZdS0Gm@2
+Z65 VFS=V?GGn@7KFIIIzDbm8Q3
+R3
+Z66 w1542704980
+Z67 8../src/hdl/mux4input.v
+Z68 F../src/hdl/mux4input.v
 L0 1
-R8
+R7
 r1
 31
-R21
+R10
+R11
+R12
+Z69 !s108 1542724263.494000
 R9
-R14
-Z68 !s100 J>U:D9kB0YI2]YQ<5eOff1
-Z69 !s108 1542704986.546000
-R24
 !i10b 1
 !s85 0
 !s101 -O0
@@ -173,16 +174,16 @@ vregister
 Z70 !s10a 1542705159
 Z71 I_jBziV3b@G]kI3PIDW<gG0
 Z72 Vd8RznRi7mOGJ^Dl?M?8mo2
-R4
+R3
 Z73 w1542705159
 Z74 8../src/hdl/register.v
 Z75 F../src/hdl/register.v
 L0 1
-R8
+R7
 r1
 31
-R9
-R14
+R11
+R12
 Z76 !s100 oOnMA61Y8BkKH6[DljH521
 Z77 !s108 1542705162.580000
 Z78 !s107 ../src/hdl/yuv_to_rgb_conversion.v|../src/hdl/sram_vga_controller.v|../src/hdl/register.v.bak|../src/hdl/register.v|../src/hdl/mux4input.v|../src/hdl/mux2input.v|../src/hdl/decompressor_top.v|../src/hdl/counter.v|../src/hdl/colour_conversion_datapath.v|../src/hdl/colour_conversion_controller.v|../src/hdl/colour_conversion.v|
@@ -191,18 +192,19 @@ Z79 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|../src/hdl/colour_co
 !s85 0
 !s101 -O0
 vSRAM_Emulator
+R33
 Z80 IH7Ha5Wi1Oja[QJUlMBCC40
 Z81 V5H2z21_hm4A]4??]:^g1P2
-R4
-R34
+R3
+R36
 Z82 8EmulatorModule/SRAM_Emulator.v
 Z83 FEmulatorModule/SRAM_Emulator.v
 L0 2
-R8
+R7
 r1
 31
-R9
-R14
+R11
+R12
 Z84 n@s@r@a@m_@emulator
 Z85 !s100 I9gUUcLQldEIYfj=2Mk]V3
 Z86 !s108 1542706305.893000
@@ -212,86 +214,88 @@ Z88 !s90 -reportprogress|300|+acc|-incr|-source|+define+SIM|EmulatorModule/SRAM_
 !s85 0
 !s101 -O0
 vsram_vga_controller
-R42
+R33
 Z89 I79Z7kz=ZFoHgWh?5US7W61
 Z90 V>md6JoV`iTIIg23`@W2IL0
-R4
-R34
+R3
+R36
 Z91 8../src/hdl/sram_vga_controller.v
 Z92 F../src/hdl/sram_vga_controller.v
 L0 2
-R8
+R7
 r1
 31
-R47
+R48
 R24
 R21
-R9
-R14
+R11
+R12
 Z93 !s100 AA@GK26JTJ4FF3?=S_j`Z3
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_top
-!i10b 1
-!s100 kme<Rl9cjQ3K]1TImDY9j2
-I@JB>omdL1bSKLeA;41_D;0
-Vk;5b2Jf]RA_GlDd]EWFae3
-R4
-R34
-8./tb/tb_top.v
-F./tb/tb_top.v
-F../src/inc/param.v
-L0 2
-R8
-r1
-!s85 0
-31
-!s108 1542706306.443000
-!s107 ../src/inc/param.v|./tb/tb_top.v|
-!s90 -reportprogress|300|+acc|-incr|-source|+incdir+../src/inc|+define+SIM|./tb/tb_top.v|
-!s101 -O0
-R9
-!s92 +acc -source +incdir+../src/inc +define+SIM -O0
-vVGA_Emulator
-Z94 IPD`mi@@B`G6DGO=K:zBlf0
-Z95 Vfh=0`gBJm@k737V0Ein>D2
-R4
-R34
-R35
+R33
+Z94 I@JB>omdL1bSKLeA;41_D;0
+Z95 Vk;5b2Jf]RA_GlDd]EWFae3
+R3
 R36
+Z96 8./tb/tb_top.v
+Z97 F./tb/tb_top.v
+Z98 F../src/inc/param.v
 L0 2
-R8
+R7
 r1
 31
-R38
-R39
-R40
-R9
-R14
-Z96 n@v@g@a_@emulator
+R11
+Z99 !s100 kme<Rl9cjQ3K]1TImDY9j2
+Z100 !s108 1542706306.443000
+Z101 !s107 ../src/inc/param.v|./tb/tb_top.v|
+Z102 !s90 -reportprogress|300|+acc|-incr|-source|+incdir+../src/inc|+define+SIM|./tb/tb_top.v|
+Z103 !s92 +acc -source +incdir+../src/inc +define+SIM -O0
 !i10b 1
-Z97 !s100 GTdUYl04Xl<n@d>3XUCfF1
+!s85 0
+!s101 -O0
+vVGA_Emulator
+R33
+Z104 IPD`mi@@B`G6DGO=K:zBlf0
+Z105 Vfh=0`gBJm@k737V0Ein>D2
+R3
+R36
+R37
+R38
+L0 2
+R7
+r1
+31
+R40
+R41
+R42
+R11
+R12
+Z106 n@v@g@a_@emulator
+Z107 !s100 GTdUYl04Xl<n@d>3XUCfF1
+!i10b 1
 !s85 0
 !s101 -O0
 vyuv_to_rgb_conversion
-R42
-Z98 I;KmZ@nCZMbUWT9[Tm9YAS1
-Z99 V3o@a5WP`GMhkNLgRUm4Lk0
-R4
-R34
-Z100 8../src/hdl/yuv_to_rgb_conversion.v
-Z101 F../src/hdl/yuv_to_rgb_conversion.v
+R33
+Z108 I;KmZ@nCZMbUWT9[Tm9YAS1
+Z109 V3o@a5WP`GMhkNLgRUm4Lk0
+R3
+R36
+Z110 8../src/hdl/yuv_to_rgb_conversion.v
+Z111 F../src/hdl/yuv_to_rgb_conversion.v
 L0 2
-R8
+R7
 r1
 31
-R47
+R48
 R24
 R21
-R9
-R14
-Z102 !s100 k@1jWE81]nLIR`574nV@L1
+R11
+R12
+Z112 !s100 k@1jWE81]nLIR`574nV@L1
 !i10b 1
 !s85 0
 !s101 -O0
